@@ -30,7 +30,7 @@ function Login() {
         <Input placeholder="Senha" type="password" />
         <button
           className="w-full py-4 rounded-sm bg-[#3E5690] text-white
-          mt-6 text-2xl font-bold"
+          mt-6 text-2xl font-bold hover:bg-[#2E3E70]"
           type="submit"
           onClick={(e) => e.preventDefault()}
         >
