@@ -32,6 +32,20 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
+    'max-len': [
+      'error',
+      {
+        code: 80,
+        tabWidth: 2,
+        comments: 80,
+        ignoreComments: false,
+        ignoreTrailingComments: true,
+        ignoreUrls: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+        ignoreRegExpLiterals: true,
+      },
+    ],
     'padding-line-between-statements': [
       'error',
       { blankLine: 'always', prev: ['const', 'let', 'var', 'block', 'block-like'], next: '*' },
@@ -51,20 +65,6 @@ module.exports = {
         jsx: 'never',
         ts: 'never',
         tsx: 'never',
-      },
-    ],
-    'max-len': [
-      'warn',
-      {
-        code: 100,
-        tabWidth: 2,
-        comments: 80,
-        ignoreComments: false,
-        ignoreTrailingComments: true,
-        ignoreUrls: true,
-        ignoreStrings: true,
-        ignoreTemplateLiterals: true,
-        ignoreRegExpLiterals: true,
       },
     ],
   },
