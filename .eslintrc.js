@@ -32,6 +32,11 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
+    'padding-line-between-statements': [
+      'error',
+      { blankLine: 'always', prev: ['const', 'let', 'var', 'block', 'block-like'], next: '*' },
+    ],
+    'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/no-unused-vars': 'error',
     '@typescript-eslint/no-useless-constructor': 'error',
     'react/jsx-filename-extension': [
