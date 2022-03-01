@@ -4,7 +4,7 @@ import Login from '../pages/Login';
 function Router() {
   return (
     <Routes>
-      <Route path="/" element={<Login />} />
+      <Route path="/" element={ <Login /> } />
     </Routes>
   );
 }

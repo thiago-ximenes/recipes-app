@@ -20,7 +20,7 @@ function Login() {
       >
         <img
           className="w-40"
-          src={login}
+          src={ login }
           alt="Recipes App"
         />
         <span
@@ -40,7 +40,7 @@ function Login() {
           className="flex justify-center align-center w-full py-4 rounded-sm bg-[#3E5690] text-white
           mt-6 text-2xl font-bold hover:bg-[#2E3E70]"
           type="submit"
-          onClick={(e) => e.preventDefault()}
+          onClick={ (e) => e.preventDefault() }
         >
           <span>Entrar</span>
           <GiForkKnifeSpoon

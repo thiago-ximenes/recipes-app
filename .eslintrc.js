@@ -32,6 +32,19 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
+    'react/jsx-newline': [2, { prevent: true }],
+    'react/jsx-curly-newline': [
+      'error', {
+        multiline: 'forbid',
+        singleline: 'forbid',
+      },
+    ],
+    'react/jsx-curly-spacing': [2,
+      {
+        when: 'always',
+        children: false,
+      },
+    ],
     'max-len': [
       'error',
       {
