@@ -4,7 +4,7 @@ import Input from '../components/Input';
 import login from '../images/login.png';
 import api from '../services/api';
 
-function Login() {
+const Login : React.FC = () => {
   useEffect(() => {
     document.title = 'Login - App de Receitas';
     api.get('doce').then((response) => console.log(response.data));
@@ -51,6 +51,6 @@ function Login() {
       </form>
     </main>
   );
-}
+};
 
 export default Login;

@@ -1,12 +1,12 @@
 import { Route, Routes } from 'react-router-dom';
 import Login from '../pages/Login';
+import MainPage from '../pages/MainPage';
 
-function Router() {
-  return (
-    <Routes>
-      <Route path="/" element={ <Login /> } />
-    </Routes>
-  );
-}
+const Router: React.FC = () => (
+  <Routes>
+    <Route path="/" element={ <Login /> } />
+    <Route path="/recipes" element={ <MainPage /> } />
+  </Routes>
+);
 
 export default Router;
