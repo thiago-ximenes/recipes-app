@@ -6,7 +6,7 @@ import api from '../services/api';
 
 function Login() {
   useEffect(() => {
-    document.title = 'Login';
+    document.title = 'Login - App de Receitas';
     api.get('doce').then((response) => console.log(response.data));
   }, []);
 
