@@ -1,7 +1,15 @@
+import { useEffect } from 'react';
+import { GiForkKnifeSpoon } from 'react-icons/gi';
 import Input from '../components/Input';
 import login from '../images/login.png';
+import api from '../services/api';
 
 function Login() {
+  useEffect(() => {
+    document.title = 'Login';
+    api.get('doce').then((response) => console.log(response.data));
+  }, []);
+
   return (
     <main
       className="h-screen w-screen mx-auto flex flex-col justify-center items-center"
@@ -29,12 +37,15 @@ function Login() {
         <Input placeholder="Email" type="email" />
         <Input placeholder="Senha" type="password" />
         <button
-          className="w-full py-4 rounded-sm bg-[#3E5690] text-white
+          className="flex justify-center align-center w-full py-4 rounded-sm bg-[#3E5690] text-white
           mt-6 text-2xl font-bold hover:bg-[#2E3E70]"
           type="submit"
           onClick={(e) => e.preventDefault()}
         >
-          Entrar
+          <span>Entrar</span>
+          <GiForkKnifeSpoon
+            className="ml-2 self-center"
+          />
 
         </button>
       </form>
